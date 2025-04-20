@@ -1,0 +1,9 @@
+getgenv().infStam = true
+
+while getgenv().infStam do
+   local char = game.Players.LocalPlayer.Character
+   if char and char:FindFirstChild("Stamina") then
+      char.Stamina.Value = char.Stamina.MaxValue
+   end
+   task.wait(0.1)
+end
